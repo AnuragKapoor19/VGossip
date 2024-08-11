@@ -3,7 +3,7 @@ const app = express()
 const dotenv = require('dotenv')
 const mongodb = require('./db')
 dotenv.config()
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 5000
 const userRoutes = require("./routes/userRoutes")
 const chatRoutes = require("./routes/chatRoutes")
 const messageRoutes = require("./routes/messageRoutes")
